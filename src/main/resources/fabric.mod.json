@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "create_tweaked_controllers",
+  "version": "${version}",
+  "name": "Create_Tweaked_Controllers",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "sources": "https://github.com/Fabricators-of-Create/create-fabric-addon-template"
+  },
+  "license": "CC0",
+  "icon": "assets/modid/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.llyycci.create_tweaked_controllers.Create_Tweaked_Controllers"
+    ],
+    "client": [
+      "com.llyycci.create_tweaked_controllers.CTC_Client"
+    ]
+  },
+  "mixins": [
+    "create_tweaked_controllers.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${fabric_loader_version}",
+    "fabric-api": ">=${fabric_api_version}",
+    "create": "${create_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
